@@ -27,8 +27,8 @@ function App() {
   return (
     <ChakraProvider>
       <Box m={10} display="flex" gap={4}>
-        <Input onChange={onChangeFirstName} placeholder="Type in a first name..." />
-        <Input onChange={onChangeLastName} placeholder="Type in a last name..."/>
+        <Input onChange={onChangeFirstName} placeholder="Type in your first name..." />
+        <Input onChange={onChangeLastName} placeholder="Type in your last name..."/>
         <Button colorScheme='purple' onClick={handleClick}>
           Add
         </Button>
