@@ -8,43 +8,43 @@ Use [this repo](https://github.com/aaronEnyetu/fullstack_todo_list) for this del
 
 ## Resources
 
-```Create React App with TypeScript
+```
+   Create React App with TypeScript
    Chakra UI Documentation
    NestJS Documentation
    NestJS - How to set up a database
-
 ```
 
 ## Backend Setup
 
-```npm i -g @nestjs/cli
+```
+   npm i -g @nestjs/cli
    nest new api
-
 ```
 
 ## Frontend Setup
 
-```npx create-react-app frontend --template typescript
-
+```
+npx create-react-app frontend --template typescript
 ```
 
 ### Installing Packages and Libraries
 
-```Chakra UI - npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+```
+   Chakra UI - npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
    npm install
-
 ```
 
 ### Starting Development Server
 
-```npm run start:dev
-
-
+```
+npm run start:dev
 ```
 
 ### Developer Tasks
 
-```1. Frontend and Backend Creation and Connection
+```
+   1. Frontend and Backend Creation and Connection
    2. Database Creation and Connection
    3. Database Migration Set-up
 ```
