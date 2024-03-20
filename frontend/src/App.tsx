@@ -4,25 +4,33 @@ import { Box, Button, ChakraProvider, Input } from '@chakra-ui/react';
 import axios from 'axios'
 
 function App() {
-  const [name, setName] = useState("test name 3");
+  const [firstName, setFirstName] = useState("Aaron");
+  const [lastName, setLastName] = useState("Enyetu");
 
-  const onChange = (event: any) => {
+  const onChangeFirstName = (event: any) => {
     // console.log("EVENT: ", event.target.value)    
-    setName(event.target.value)
+    setFirstName(event.target.value)
+  }
+
+  const onChangeLastName = (event: any) => {
+    // console.log("EVENT: ", event.target.value)    
+    setLastName(event.target.value)
   }
 
   const handleClick = async () => {
     const response = await axios.post('http://localhost:3005/name', {
-      name,
+       firstName,
+       lastName,
     })
     console.log("RESPONSE", response.data)
   }
   return (
     <ChakraProvider>
       <Box m={10} display="flex" gap={4}>
-        <Input onChange={onChange} placeholder="Type in a name..."/>
+        <Input onChange={onChangeFirstName} placeholder="Type in a first name..." />
+        <Input onChange={onChangeLastName} placeholder="Type in a last name..."/>
         <Button colorScheme='purple' onClick={handleClick}>
-          Add Name
+          Add
         </Button>
       </Box>
    </ChakraProvider>
